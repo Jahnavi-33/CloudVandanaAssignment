@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: rgb(140, 195, 232);
+        }
+        .heading {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .formBox {
+            background-color: white;
+            width: 30%;
+            height: 440px;
+            padding: 20px;
+            margin: auto;
+        }
+        .btn {
+            color: white;
+            background-color: rgb(12, 167, 239);
+            padding: 10px 30px;
+            border: none;
+            margin-top: 20px;
+        }
+        .copyRight {
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            alert(textname.value);
+        }
+    </script>
+</head>
+<body>
+<p class="heading">Customer Survey Form</p>
+
+<div class="formBox">
+    <form action="#" name="surveyForm">
+           <label>Name</label> <input type=text name=textname id="textname">
+           <label>Email</label> <input type="email" name="email" id="email">
+
+           <p>Is this first time You are using our products & service?</p>
+           <input type="radio">Yes
+           <input type="radio">No
+
+           <p>Would you suggestion to your friends and collehue?</p>
+           <input type="radio">Yes
+           <input type="radio">No
+
+           <p>How satisfied are you with our company overall?</p>
+           <input type="radio">Satisfied
+           <input type="radio">Undecided
+           <input type="radio">Unsatisfied
+
+           <p>Do you suggestion to improve our service?</p>
+           <textarea style="height: 80px; width: 380px;"></textarea>
+
+           <button type="submit" onclick="submitForm()" class="btn">SUBMIT</button>
+    </form>
+</div>
+
+<p class="copyRight">&copy;2018 Customer survey Form. All Rights Reserved | Design By <a style="color: black; text-decoration: none;">W3Layouts</a></p>
+
+</body>
+</html>
