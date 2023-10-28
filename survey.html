@@ -3,7 +3,16 @@
 <head>
     <style>
         body {
-            background-color: rgb(140, 195, 232);
+            background-color: rgb(17, 138, 251);
+        }
+        header input[type="email"], header input[type="text"], label {
+            display:block;
+        }
+        .mainInputWrapper {
+            display: flex;
+        }
+        .inputWrapper1 {
+            margin-right: 28px;
         }
         .heading {
             color: white;
@@ -13,14 +22,14 @@
 
         .formBox {
             background-color: white;
-            width: 30%;
-            height: 440px;
-            padding: 20px;
+            width: 28%;
+            height: 450px;
+            padding: 22px;
             margin: auto;
         }
         .btn {
             color: white;
-            background-color: rgb(12, 167, 239);
+            background-color: rgb(17, 138, 251);
             padding: 10px 30px;
             border: none;
             margin-top: 20px;
@@ -28,6 +37,7 @@
         .copyRight {
             text-align: center;
             color: white;
+            margin-top: 20px;
         }
     </style>
     <script>
@@ -41,8 +51,17 @@
 
 <div class="formBox">
     <form action="#" name="surveyForm">
-           <label>Name</label> <input type=text name=textname id="textname">
-           <label>Email</label> <input type="email" name="email" id="email">
+
+          <div class="mainInputWrapper">
+            <div class="inputWrapper1">
+                <label>Name</label> 
+                <input type=text name=textname id="textname">
+               </div>
+               <div class="inputWrapper">
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+               </div>
+          </div>
 
            <p>Is this first time You are using our products & service?</p>
            <input type="radio">Yes
@@ -64,7 +83,9 @@
     </form>
 </div>
 
-<p class="copyRight">&copy;2018 Customer survey Form. All Rights Reserved | Design By <a style="color: black; text-decoration: none;">W3Layouts</a></p>
+<footer class="copyRight">
+    <small>&copy;2018 Customer survey Form. All Rights Reserved | Design By <a style="color: black; text-decoration: none;">W3Layouts</a></small>
+</footer>
 
 </body>
 </html>
